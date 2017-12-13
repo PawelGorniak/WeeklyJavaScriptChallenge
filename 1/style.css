@@ -1,0 +1,389 @@
+/* ~~ RESET ~~ */
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+@font-face {
+  font-family: 'titillium';
+  src: url("../fonts/titilliumtext22l002-webfont.woff2") format("woff2"), url("../fonts/titilliumtext22l002-webfont.woff") format("woff");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: 'titillium';
+  src: url("../fonts/titilliumtext22l004-webfont.woff2") format("woff2"), url("../fonts/titilliumtext22l004-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+/* ~~ REUSABLE ~~ */
+input {
+  vertical-align: baseline; }
+
+.float-right {
+  float: right; }
+
+h2 {
+  text-shadow: #2b0100 2px 2px 0px;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  margin: 40px 0px 20px; }
+
+.element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
+
+/* ~~ LAYOUT ~~ */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+* {
+  font: inherit; }
+
+body {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font: 400 16px titillium, sans-serif; }
+
+/* ~~ HEADER - LOGO ~~ */
+.header {
+  margin-top: 55px; }
+  .header__logo {
+    width: 429px;
+    height: 111px;
+    display: block;
+    margin: 0px auto;
+    opacity: .2; }
+
+/* ~~ MAIN ~~ */
+.main {
+  width: 1000px;
+  margin: 13px auto;
+  display: flex;
+  justify-content: space-around; }
+  .main__column {
+    padding: 0px 40px;
+    flex: 1; }
+
+/* ~~ FORM ~~ */
+.form-container {
+  background-color: rgba(0, 0, 0, 0.23);
+  padding: 20px;
+  border-radius: 4px; }
+  .form-container .form {
+    background: #f4f4f4;
+    border-radius: 4px;
+    padding: 20px; }
+
+.text, .password, .email, .tel, .select, .textarea {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #c6c6c6;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding-left: 80px;
+  color: #a3a3a3;
+  transition: border-color ease 0.3s; }
+
+.select {
+  color: #c9c9c9; }
+  .select:focus {
+    color: #a3a3a3; }
+
+input:focus, .select:focus, .textarea:focus {
+  border-color: #a3a3a3;
+  outline: none; }
+
+input::-webkit-input-placeholder,
+.textarea::-webkit-input-placeholder {
+  color: #c9c9c9;
+  opacity: 1; }
+
+input:-moz-placeholder,
+.textarea:-moz-placeholder {
+  color: #c9c9c9;
+  opacity: 1; }
+
+input::-moz-placeholder,
+.textarea::-moz-placeholder {
+  color: #c9c9c9;
+  opacity: 1; }
+
+input:-ms-input-placeholder,
+.textarea:-ms-input-placeholder {
+  color: #c9c9c9;
+  opacity: 1; }
+
+.select {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+.option {
+  background: #F4F4F4; }
+
+.checkbox {
+  opacity: 0;
+  margin-bottom: 20px; }
+
+.label--checkbox {
+  font-size: 16px;
+  font-weight: 200;
+  color: #c9c9c9;
+  position: relative;
+  cursor: pointer;
+  line-height: 25px; }
+  .label--checkbox::before {
+    content: "";
+    display: inline-block;
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    left: -23px;
+    top: 0px; }
+  .label--checkbox::after {
+    content: none; }
+  .label--checkbox__span {
+    padding-left: 15px; }
+
+.checkbox:checked + .label--checkbox::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background: linear-gradient(#a3d740, #7fc41f);
+  position: absolute;
+  left: -17px;
+  top: 6px; }
+
+.checkbox:focus + .label--checkbox:before {
+  border: 1px solid #969696; }
+
+.form--sign-in .label--checkbox::before {
+  top: 0px; }
+
+.form--sign-in .checkbox:checked + .label--checkbox::after {
+  top: 6px; }
+
+.submit {
+  width: 100%;
+  height: 46px;
+  border: 1px solid #3a9a00;
+  border-radius: 3px;
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 1px 1px 0px #51850e;
+  cursor: pointer;
+  background-image: linear-gradient(#a3d740, #7fc41f 50%, #98d22c 51%, #72b01b);
+  background-size: auto 200%; }
+  .submit:hover:enabled {
+    background-position: 100% 100%; }
+  .submit--inactive {
+    background: linear-gradient(#e0f2c0, #c7ee91);
+    cursor: not-allowed; }
+  .submit--small {
+    width: 40%;
+    font-size: 22px;
+    height: 40px; }
+  .submit--right {
+    float: right; }
+  .submit--discard {
+    background-image: linear-gradient(#f65e70, #f03747 50%, #f4475b 51%, #ee2031);
+    border-color: #b40e1b; }
+
+.textarea {
+  height: 230px;
+  text-align: left;
+  padding: 10px 15px;
+  background: linear-gradient(#f6f6f6, #f0f0f0); }
+
+.logo-bottom {
+  margin: 50px auto 20px; }
+  .logo-bottom__img {
+    width: 355px;
+    height: 130px;
+    display: block;
+    opacity: .3;
+    margin: 0px auto; }
+
+.text {
+  background: url("../img/username_icon.png") top left no-repeat, linear-gradient(#f6f6f6, #f0f0f0); }
+
+.password {
+  background: url("../img/password_icon.png") top left no-repeat, linear-gradient(#f6f6f6, #f0f0f0); }
+
+.email {
+  background: url("../img/email_icon.png") top left no-repeat, linear-gradient(#f6f6f6, #f0f0f0); }
+
+.select {
+  background: url("../img/location_icon.png") top left no-repeat, url("../img/select_arrow.png") right 12px center no-repeat, linear-gradient(#f6f6f6, #f0f0f0); }
+
+.tel {
+  background: url("../img/phone_icon.png") top left no-repeat, linear-gradient(#f6f6f6, #f0f0f0); }
+
+/* ~~ Responsive ~~ */
+@media all and (max-width: 599px) {
+  h2 {
+    font-size: 26px; }
+
+  .main {
+    width: 100%;
+    flex-direction: column; }
+
+  .main__column {
+    padding: 0px 5px; }
+
+  .form-container {
+    padding: 10px; }
+
+  .header__logo, .logo-bottom__img {
+    width: 70%;
+    height: 70%; }
+
+  .label--checkbox {
+    font-size: 13px; }
+
+  .label--checkbox__span {
+    padding-left: 10px; }
+
+  .submit {
+    font-size: 17px; }
+
+  .text {
+    background: linear-gradient(#f6f6f6, #f0f0f0); }
+
+  .password {
+    background: linear-gradient(#f6f6f6, #f0f0f0); }
+
+  .email {
+    background: linear-gradient(#f6f6f6, #f0f0f0); }
+
+  .select {
+    background: url("../img/select_arrow.png") right 12px center no-repeat, linear-gradient(#f6f6f6, #f0f0f0); }
+
+  .tel {
+    background: linear-gradient(#f6f6f6, #f0f0f0); }
+
+  .text, .password, .email, .tel, .select, .textarea {
+    padding-left: 15px;
+    font-weight: 200;
+    font-size: 14px; }
+
+  .checkbox:checked + .label--checkbox::after {
+    top: 6px; }
+
+  .form--sign-in .label--checkbox::before {
+    top: 0px; }
+
+  .form--sign-in .checkbox:checked + .label--checkbox::after {
+    top: 6px; } }
+@media all and (min-width: 599px) and (max-width: 1280px) {
+  .main {
+    width: 500px;
+    flex-direction: column; } }
+.test {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  color: #fff;
+  font-weight: 20px; }
+
+/*# sourceMappingURL=style.css.map */
